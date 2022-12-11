@@ -1,0 +1,14 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+footer{
+    text-align: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

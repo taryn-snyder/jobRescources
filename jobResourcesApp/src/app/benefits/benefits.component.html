@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<header>
+
+</header>
+
+<h5>Benefits</h5>
+
+<div class=cardSmall>{{status}}</div>
+<h1>About</h1>
+<br>
+<p>As an employee of Job Resources, you are entitled to benefits after 10 weeks of
+    working at Job Resources and are in good standing with the company. Good standing
+    meaning that you are a reliable employee, such as showing up for your shifts on
+    time and producing good quality work for that probation period of 10 weeks. After
+    those 10 weeks, you are able to apply to the company provided insurance through
+    this website.
+</p>
+<p>
+    Job Resources provided medical, eye, and dental insurance to their employees. The
+    insurance provider for medical is Blue Cross Blue Sheild Minnesota and Davis
+    Vision for eye and dental insurance.
+</p>
+<p>
+    An employee can apply by entering their information in the form below. Make sure
+    to insert all the right infomation as errors could cause issue, like extended
+    period of waiting for approval or dental or just straight up denial.
+</p>
+<p>
+    The way that an employee can tell if they have been approved or denied is via the
+    label above. It will either say, not apply, for employees that have not applied yet
+    or are not able to apply yet, approved, for employees that have submitted the application
+    and the insurance company as approved it, or denied, for employees that have been denied
+    coverage by the insurance company. Any questions about insurance or denial is to be
+    directed to the insurance company directly.
+</p>
+
+<h2>Insurance Contact Information:</h2>
+<div class="row">
+    <div class="column">
+        <h3>Blue Cross Blue Sheild Minnesota:</h3>
+        <p>(651) 662-8000</p>
+        <p>1-800-382-2000</p>
+        <p>TTY 711</p>
+        <p>8 a.m. to 4:30 p.m., Monday through Friday</p>
+        <br>
+        <p>Blue Cross and Blue Shield of Minnesota</p>
+        <p>P.O. Box 64560</p>
+        <p>St. Paul, MN 55164-0560</p>
+    </div>
+    <div class="column">
+        <h3>Davis Vision:</h3>
+        <p>1 (800) 773-2847</p>
+        <p>Monday – Friday: 8AM to 8PM (ET)</p>
+        <p>Saturday: 9AM to 4PM (ET)</p>
+        <br>
+        <p>Davis Vision</p>
+        <p>Capital Region Health Park, Suite 301</p>
+        <p>711 Troy-Schenectady Road</p>
+        <p>Latham, NY 12110</p>
+    </div>
+
+</div>
+
+
+<div class=card>
+    <h1>Aplication</h1>
+
+    <div class="form-group">
+        <label>*First Name: </label>
+        <input type="text" class="form-control" required #fname />
+    </div>
+    <div class="form-group">
+        <label> *Last Name: </label>
+        <input type="text" class="form-control" required #lname />
+    </div>
+    <div class="form-group">
+        <label> *Employee ID: </label>
+        <input type="number" class="form-control" required #eID />
+    </div>
+    <div class="form-group">
+        <label> *Social Security Number: </label>
+        <input type="number" class="form-control" required #ssn />
+    </div>
+    <div class="form-group">
+        <label> *Date of Birth: </label>
+        <input type="Date" class="form-control" required #DoB />
+    </div>
+    <div class="form-group">
+        <label> Gender: </label>
+        <input type="text" class="form-control"  #gender />
+    </div>
+    <div class="form-group">
+        <label> *Phone Number: </label>
+        <input type="number" class="form-control" required #pNumber />
+    </div>
+    <br>
+    <h4>Address:</h4>
+    <div class="form-group">
+        <label> *Street Address: </label>
+        <input type="text" class="form-control" required #stAdd/>
+    </div>
+    <div class="form-group">
+        <label> Unit: </label>
+        <input type="text" class="form-control" #unit />
+    </div>
+    <div class="form-group">
+        <label> *City: </label>
+        <input type="text" class="form-control" required #city />
+    </div>
+    <div class="form-group">
+        <label> *State: </label>
+        <input type="text" class="form-control" required #state />
+    </div>
+    <div class="form-group">
+        <label> *ZIP Code: </label>
+        <input type="number" class="form-control" required #zip />
+    </div>   
+    <br>
+    <button onblclick = "submitAlert()">Submit</button>
+    <br>
+</div>
+
+<script>
+    function submitAlert(){
+        alert("Congraduations, you have submitted your insurance application. \n" +
+        "It will take up to 2 to 3 weeks until you get a response. You will get \n"+
+        "information in the mail and the pending badge at the top will change to \n" +
+        "approved or denied.");
+    }
+</script>
+
+
+<br>
+<br>
+<br>
+
+
+</html>

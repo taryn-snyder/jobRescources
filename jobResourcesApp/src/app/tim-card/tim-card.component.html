@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<header>
+
+</header>
+
+<div class=card>
+    <br>
+    <h1> Time Card</h1>
+    <br>
+    <div class ="form-group">
+        <h3>Select Week:</h3>
+        <select class="form-control" #weekSelected>
+            <option value="meeting">{{week1}}</option>
+            <option value="appointment">{{week2}}</option>
+            <option value="event">{{week3}}</option>
+        </select>
+        <button class = "submit" (click) = "week(weekSelected.value)" >Select</button>
+    </div>
+    <br>
+    <h2>{{weekShown}}</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th>Hours</th>
+            <td>{{mon}}</td>
+            <td>{{tues}}</td>
+            <td>{{wed}}</td>
+            <td>{{thurs}}</td>
+            <td>{{fri}}</td>
+        </tr>
+    </table>
+
+</div>
+
+</html>
